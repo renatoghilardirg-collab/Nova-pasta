@@ -1,0 +1,129 @@
+/* === ESTILO GERAL === */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === CABEÇALHO === */
+header {
+    background-color: #f4a261;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* === MENU DE NAVEGAÇÃO === */
+nav ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+    text-decoration: underline;
+    color: #2a9d8f;
+}
+
+/* === CONTEÚDO PRINCIPAL === */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* === SEÇÕES === */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #264653;
+    border-left: 5px solid #2a9d8f;
+    padding-left: 10px;
+}
+
+/* === IMAGENS === */
+section img {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* === FORMULÁRIO === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+/* === RODAPÉ === */
+footer {
+    background-color: #9c27b0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
